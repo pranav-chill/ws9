@@ -1,0 +1,1000 @@
+ 1006  rm corr_customers
+ 1007  rm customer-correlation-values.tmp
+ 1008  for f in *.txt; do corr=`~/datamash-1.3/datamash -W ppearson 1:2 < $f`; id=$(echo $f | cut -d '.' -f1); echo "$id      $corr" >>corr_customers; done      
+ 1009  cd ~/a2
+ 1010  ls
+ 1011  nano cust_n100.txt
+ 1012  tr -s " " "\t" < cust100.tmp | cut -f 3 > cust100.txt
+ 1013  ls
+ 1014  nano cust100.txt
+ 1015  for id in $(cat cust100.txt); do?
+ 1016  for id in $(cat cust100.txt); do datamash-1.3/datamash -W ppearson 1:2 < CUSTOMERS/${id}.txt; done > custcorrval.tmp
+ 1017  cd CUSTOMERS
+ 1018  ls
+ 1019  CP CUSTOMERS datamash-1.3
+ 1020  cp CUSTOMERS datamash-1.3
+ 1021  cp -a CUSTOMERS datamash-1.3
+ 1022  cp -a /CUSTOMERS/. /datamash-1.3/
+ 1023  ~/datamash-1.3$ for file in *.txt; do ./datamash  -W ppearson 1:2 < $file; done 
+ 1024  cd datamash-1.3
+ 1025  for file in $HOME/a2/CUSTOMERS/*.txt; do ./datamash  -W ppearson 1:2 < $file; done 
+ 1026  for file in $HOME/a2/PRODUCTS*.txt; do ./datamash  -W ppearson 1:2 < $file; done
+ 1027  cd
+ 1028  cd a2
+ 1029  ls
+ 1030  cd 
+ 1031  cd a2
+ 1032  cd PRODUCTS
+ 1033  ls
+ 1034  # install datamash
+ 1035  wget http://ftp.gnu.org/gnu/datamash/datamash-1.3.tar.gz
+ 1036  tar -xzf datamash-1.3.tar.gz
+ 1037  cd datamash-1.3/
+ 1038  ./configure
+ 1039  make
+ 1040  for file in $HOME/a2/PRODUCTS*.txt; do ./datamash  -W ppearson 1:2 < $file; done
+ 1041  for file in $HOME/a2/PRODUCTS/*.txt; do ./datamash  -W ppearson 1:2 < $file; done
+ 1042  cd
+ 1043  cd a2
+ 1044  cd CUSTOMERS
+ 1045  cd datamash-1.3
+ 1046  for file in $HOME/a2/CUSTOMERS/*.txt; do ./datamash  -W mean 2 < $file; done 
+ 1047  cd
+ 1048  cd a2
+ 1049  cd PRODUCTS
+ 1050  cd datamash-1.3
+ 1051  for file in $HOME/a2/PRODUCTS*.txt; do ./datamash  -W mean 2 < $file; done 
+ 1052  for file in $HOME/a2/PRODUCTS/*.txt; do ./datamash  -W mean 2 < $file; done 
+ 1053  for file in $HOME/a2/PRODUCTS/*.txt;do ./datamash  -W mean 2 < $file; done | sort -n | tail -1
+ 1054  for file in $HOME/a2/PRODUCTS/*.txt; do ./datamash  -W mean 2 < $file; done | sort -n | tail -1
+ 1055  for file in $HOME/a2/PRODUCTS/*.txt; do ./datamash  -W mean 2 < $file; done | sort -n | head -1
+ 1056  alias l="ls -latr"
+ 1057  rm a2.txt
+ 1058  rm -r a2
+ 1059  ;s
+ 1060  ls
+ 1061  script a2.txt
+ 1062  less a2.txt
+ 1063  sudo gedit a2.txt
+ 1064  vi a2.txt
+ 1065  nano a2.txt
+ 1066  sudo gedit a2.txt
+ 1067  nano a2.txt
+ 1068  alias l="ls -latr"
+ 1069  nano a2.txt
+ 1070  alias l="ls -latr"
+ 1071  script test
+ 1072  less test.txt
+ 1073  ls
+ 1074  nano test
+ 1075  nano a2.txt
+ 1076  git init
+ 1077  git status
+ 1078  git commit -m "assignment 2"
+ 1079  git add a2.txt
+ 1080  git status
+ 1081  git remote add origin https://github.com/pranav-chill/a2.git
+ 1082  git push -u origin master
+ 1083  git status
+ 1084  git init
+ 1085  git status
+ 1086  git commit -m "Assignment 2"
+ 1087  git remote add origin https://github.com/pranav-chill/a2.git
+ 1088  git remote remove origin
+ 1089  git remote add origin https://github.com/pranav-chill/a2.git
+ 1090  git push -u origin master
+ 1091  git pull origin master
+ 1092  git rm README.txt
+ 1093  git checkout master
+ 1094  git rm -r README.txt
+ 1095  git ls
+ 1096  git a2 ls
+ 1097  cd
+ 1098  ls
+ 1099  cd a2
+ 1100  ls
+ 1101  cd PRODUCTS
+ 1102  ls
+ 1103  cd
+ 1104  mkdir as6
+ 1105  cd as6
+ 1106  DATETIME=$(date "+%Y%m%d_%H%M%S")
+ 1107  echo $DATETIME
+ 1108  cd
+ 1109  cp 0345451120.txt
+ 1110  cp 0345451120.txt 0345451120.txt.test.$DATETIME
+ 1111  cd cp 0345451120.txt 0345451120.txt.test.$DATETIME
+ 1112  ls
+ 1113  mkdir ws8
+ 1114  mkdir ws6
+ 1115  cd mkdir ~/ws6/PRODUCTS
+ 1116  mkdir ~/ws6/PRODUCTS
+ 1117  grep -i 0345451120 amazon_reviews_us_Books_v1_02.tsv >> ~/ws6/PRODUCTS/0345451120.txt
+ 1118  head wc -l~/ws6/PRODUCTS/0451527100.txt
+ 1119  head wc -l ~/ws6/PRODUCTS/0345451120.txt
+ 1120  head wc ~/ws6/PRODUCTS/0345451120.txt
+ 1121  cd ws6
+ 1122  ls
+ 1123  cd PRODUCTS
+ 1124  ls
+ 1125  grep -i 0345451120 amazon_reviews_us_Books_v1_02.tsv >> ~/ws6/PRODUCTS/0345451120.txt
+ 1126  DATETIME=$(date "+%Y%m%d_%H%M%S")
+ 1127  echo $DATETIME
+ 1128  d ~/ws6/PRODUCTS
+ 1129  cd ~/ws6/PRODUCTS
+ 1130  cp 0345451120.txt 0345451120.$DATETIME.txt
+ 1131  echo "marketplace customer_id review_id product_id product_parent product_title product_category 5 7 10 N N headline body 2021" >> 0345451120.txt
+ 1132  tail -n 1 0345451120.20211014_052345.txt
+ 1133  ls
+ 1134  tail -n 1 0345451120.20211014_054029.txt
+ 1135  ln -s 0345451120.txt.test.20211014_054029 0345451120.txt.test.LATEST
+ 1136  ls
+ 1137  exit
+ 1138  cd
+ 1139  ls
+ 1140  cd ws6
+ 1141  ls
+ 1142  cd PRODUCTS
+ 1143  LS
+ 1144  PS
+ 1145  ls
+ 1146  export DATETIME=`date "+%Y%m%d_%H%M%S"`
+ 1147  echo $DATETIME
+ 1148  cp 0345451120.txt 0345451120.$DATETIME.txt
+ 1149  echo "marketplace customer_id review_id product_id product_parent product_title product_category 5 7 10 N N headline body 2021" >> 0345451120.txt
+ 1150  ls
+ 1151  tail -n 1 0345451120.20211014_052345.txt
+ 1152  ls
+ 1153  rm 0345451120.txt
+ 1154  rm 0345451120.20211014_052345.txt
+ 1155  ls
+ 1156  cd
+ 1157  script ws6.txt
+ 1158  cd ~/ws6/PRODUCTS
+ 1159  ls
+ 1160  head -n 0345451120.txt.test.LATEST
+ 1161  crontab -e
+ 1162  ls
+ 1163  vi crontab file
+ 1164  cd ~/ws6/PRODUCTS
+ 1165  ls
+ 1166  cd
+ 1167  ls
+ 1168  nano ws6.txt
+ 1169  cd ~/ws6/PRODUCTS
+ 1170  ls
+ 1171  rm 0345451120.txt.test.LATEST
+ 1172  rm 0345451120.20211014_054029.txt
+ 1173  script ws6.txt
+ 1174  DATETIME=$(date "+%Y%m%d_%H%M%S")
+ 1175  echo $DATETIME
+ 1176  cp 0345451120.txt 0345451120.$DATETIME.txt
+ 1177  ls
+ 1178  echo "5  5" >> 0345451120.20211014_060817.txt
+ 1179  ln -s 0345451120.20211014_060817.txt 0345451120.20211014_060817.txt.test.
+ 1180  ls
+ 1181  rm 0345451120.20211014_060817.txt.test.
+ 1182  ln -s 0345451120.txt.test.20211014_060817 0345451120.LATEST.txt
+ 1183  ls
+ 1184  crontab cronfile
+ 1185  crontab -l
+ 1186  cd ws6
+ 1187  cd PRODUCTS
+ 1188  DATETIME=$(date "+%Y%m%d_%H%M%S")
+ 1189  echo $DATETIME
+ 1190  cp 0345451120.txt 0345451120.$DATETIME.txt
+ 1191  ls
+ 1192  echo "5 5" >> 0345451120.20211015_014033.txt
+ 1193  ln -s 0345451120.txt.test.20211015_014033 0345451120.LATEST.txt
+ 1194  ls
+ 1195  cd
+ 1196  vi crontab1
+ 1197  cat cronfile1
+ 1198  vi cronfile`
+ 1199  ;
+ 1200  q
+ 1201  vi cronfile1
+ 1202  cat cronfile1
+ 1203  cat cronfile1  * * * * * sum=$(cut -f 8 ~/ws6/PRODUCTS/0345451120.LATEST.txt | paste -sd + | bc); count=$(wc -l < ~/ws6/PRODUCTS/0345451120.LATEST.txt); echo "scale=2; $sum/$count" | bc > ~/ws6/PRODUCTS/0345451120.LATEST.txt -----
+ 1204  ls
+ 1205  cd ~/ws6/PRODUCTS
+ 1206  ls
+ 1207  vi 0345451120.LATEST.tx
+ 1208  DATETIME=$(date "+%Y%m%d_%H%M%S")
+ 1209  echo $DATETIME
+ 1210  cp 0345451120.txt 0345451120.20211015_015827.txt
+ 1211  ls
+ 1212  rm ws6.txt
+ 1213  cd ws6
+ 1214  ls
+ 1215  cd PRODUCTS
+ 1216  ls
+ 1217  rm 0345451120.LATEST.txt
+ 1218  rm 0345451120.20211014_060817.txt
+ 1219  cd
+ 1220  script ws6.txt
+ 1221  rm ws6.txt
+ 1222  cd ~/ws6/PRODUCTS
+ 1223  rm 0345451120.LATEST.txt 
+ 1224  rm 0345451120.20211015_014033.txt
+ 1225  cd
+ 1226  script ws6.txt
+ 1227  rm ws6.txt
+ 1228  script ws6.txt
+ 1229  cd ~/ws6/PRODUCTS
+ 1230  DATETIME=$(date "+%Y%m%d_%H%M%S")
+ 1231  echo $DATETIME
+ 1232  cp 0345451120.txt 0345451120.20211015_015938
+ 1233  DATETIME=$(date "+%Y%m%d_%H%M%S")
+ 1234  echo $DATETIME
+ 1235  cp 0345451120.txt 0345451120.$DATETIME.txt
+ 1236  ls
+ 1237  echo "5  5" >> 0345451120.20211015_053058.txt
+ 1238  ln -s 0345451120.txt.test.20211015_053058 0345451120.LATEST.txt
+ 1239  l
+ 1240  ls
+ 1241  vi crontab1
+ 1242  cat cronfile * * * * * awk '{ sum += $8 } END { if (NR > 0) print sum / NR }' ~/ws6/PRODUCTS/0345451120.LATEST.txt > ~/ws6/PRODUCTS/0345451120.AVERAGE.txt 2>&1
+ 1243  ls
+ 1244  cs ~/ws6/PRODUCTS
+ 1245  cd ~/ws6/PRODUCTS
+ 1246  ls
+ 1247  rm 0345451120.20211015_015938
+ 1248  rm ws6.txt
+ 1249  ls
+ 1250  script ws6.txt
+ 1251  cmds.log
+ 1252  commands
+ 1253  history
+ 1254  history > cmds.log
+ 1255  ls
+ 1256  nano ws6.txt
+ 1257  git init
+ 1258  git status
+ 1259  git add cmds.log
+ 1260  git add ws6.txt
+ 1261  git status
+ 1262  git commit -m "Worksheet 6"
+ 1263  git remote add origin https://github.com/pranav-chill/ws6.git
+ 1264  git push -u origin master
+ 1265  git remote add origin https://github.com/pranav-chill/ws6.git
+ 1266  git push -u origin master
+ 1267  git pull origin master
+ 1268  sed -i 's/[,.;]//g' 0345451120.txt
+ 1269  sed -i 's/and//g' 0345451120.txt
+ 1270  sed -i 's/if//g' 0345451120.txt
+ 1271  sed -i 's/<[a-zA-Z]* \/>//g' 0345451120.txt
+ 1272  less 0345451120.txt
+ 1273  cut -f 14 0345451120.txt > ws7.output.txt
+ 1274  cd ws6
+ 1275  cd PRODUCTS
+ 1276  ;s
+ 1277  ls
+ 1278  cd
+ 1279  ls
+ 1280  mkdir ws7
+ 1281  cd ws7
+ 1282  mkdir PRODUCTS
+ 1283  cd
+ 1284  grep -i 0345451120 >> ~/ws7/PRODUCTS/0345451120.txt
+ 1285  cd ~/ws7/PRODUCTS
+ 1286  ls
+ 1287  nano 0345451120.txt
+ 1288  cd
+ 1289  cd ~/ws7/PRODUCTS
+ 1290  rm 0345451129.txt
+ 1291  ls
+ 1292  rm 0345451120.txt
+ 1293  d
+ 1294  cd
+ 1295  grep -i 0345451120 amazon_reviews_us_Books_v1_02.tsv >> ~/ws7/PRODUCTS/0345451120.txt
+ 1296  cd ~/ws7/PRODUCTS
+ 1297  ls
+ 1298  nano 0345451120.txt
+ 1299  script ws7.txt
+ 1300  nano ws7.txt
+ 1301  history > cmds.log
+ 1302  ls
+ 1303  git status
+ 1304  git add ws7.txt
+ 1305  git add cmds.log
+ 1306  git status
+ 1307  git commit -m "Worksheet 7"
+ 1308  git remote add origin https://github.com/pranav-chill/ws7.git
+ 1309  git push -u origin master
+ 1310  git remote add origin https://github.com/pranav-chill/ws7.git
+ 1311  git remote remove origin https://github.com/pranav-chill/ws7.git
+ 1312  git remote add origin https://github.com/pranav-chill/ws7.git
+ 1313  git remote rm origin
+ 1314  git remote add origin https://github.com/pranav-chill/ws7.git
+ 1315  cd
+ 1316  cd q2
+ 1317  cd a2
+ 1318  ls
+ 1319  cd CUSTOMERS
+ 1320  ls
+ 1321  cd
+ 1322  mkdir a3
+ 1323  cd a4
+ 1324  cd a3
+ 1325  mkdir PRODUCTS
+ 1326  mkdir CUSTOMERS
+ 1327  cd
+ 1328  cd ~/a2/CUSTOMERS
+ 1329  cd
+ 1330  cp ~/a2/CUSTOMERS ~/a3/CUSTOMERS
+ 1331  cp /home/pranav/a2/CUSTOMERS /home/pranav/a3/CUSTOMERS
+ 1332  cp -r /home/pranav/a2/CUSTOMERS /home/pranav/a3/CUSTOMERS
+ 1333  cd ~/a3/CUSTOMERS
+ 1334  ls
+ 1335  CUSTOMERS
+ 1336  cd CUSTOMERS
+ 1337  ls
+ 1338  cp -r /home/pranav/a2/CUSTOMERS /home/pranav/a3
+ 1339  cd
+ 1340  cd /home/pranav/a3
+ 1341  ls
+ 1342  ls CUSTOMERS
+ 1343  ls PRODUCTS
+ 1344  cd PRODUCTS
+ 1345  ls
+ 1346  cd
+ 1347  ~/a3
+ 1348  cd a3
+ 1349  ls
+ 1350  rm -r CUSTOMERS
+ 1351  rm -r PRODUCTS
+ 1352  ls
+ 1353  cs 
+ 1354  cd
+ 1355  cp -r /home/pranav/a2 /home/pranav/a3
+ 1356  cd a3
+ 1357  ls
+ 1358  cd a2
+ 1359  ls
+ 1360  cd
+ 1361  cd a2
+ 1362  ls
+ 1363  cd CUSTOMERS
+ 1364  ls
+ 1365  cd
+ 1366  cd a3
+ 1367  rm -r a2
+ 1368  cp -r /home/pranav/a2/CUSTOMERS /home/pranav/a3
+ 1369  ls
+ 1370  ls CUSTOMERS
+ 1371  cp -r /home/pranav/a2/PRODUCTS /home/pranav/a3
+ 1372  ls
+ 1373  cd PRODUCTS
+ 1374  ls
+ 1375  cd
+ 1376  for FILE in CUSTOMERS/*.txt; do median=$(awk '{if ($3>0){printf "%s\t%s\n",$1,$2/$3} else {printf "%s\t0\n",$1}}' < $FILE | sort -k 2 -n | awk '{a[i++]=$2;} END {print a[int(i/2)];}'); awk -v median=$median '{if ($3>0){ if ($2/$3 > median){printf "%s\t%s\n",$1,$2/$3} else {printf "%s\t0\n",$1}} else {printf "%s\t0\n",$1}}' < $FILE > CUSTOMERS/$(basename $FILE .txt).BINARY.txt; done
+ 1377  or FILE in PRODUCTS/*.txt; do median=$(awk '{if ($3>0){printf "%s\t%s\n",$1,$2/$3} else {printf "%s\t0\n",$1}}' < $FILE | sort -k 2 -n | awk '{a[i++]=$2;} END {print a[int(i/2)];}'); awk -v median=$median '{if ($3>0){ if ($2/$3 > median){printf "%s\t%s\n",$1,$2/$3} else {printf "%s\t0\n",$1}} else {printf "%s\t0\n",$1}}' < $FILE > PRODUCTS/$(basename $FILE .txt).BINARY.txt; done
+ 1378  for FILE in PRODUCTS/*.txt; do median=$(awk '{if ($3>0){printf "%s\t%s\n",$1,$2/$3} else {printf "%s\t0\n",$1}}' < $FILE | sort -k 2 -n | awk '{a[i++]=$2;} END {print a[int(i/2)];}'); awk -v median=$median '{if ($3>0){ if ($2/$3 > median){printf "%s\t%s\n",$1,$2/$3} else {printf "%s\t0\n",$1}} else {printf "%s\t0\n",$1}}' < $FILE > PRODUCTS/$(basename $FILE .txt).BINARY.txt; done
+ 1379  for FILE in CUSTOMERS/*.BINARY.txt; do corr=$(./datamash-1.3/datamash -W ppearson 1:2 < $FILE); printf "%s\t%s\n" "$(basename $FILE)" "$corr" >> a3top100norm.txt ; done
+ 1380  ls
+ 1381  cd CUSTOMERS
+ 1382  ls
+ 1383  for FILE in CUSTOMERS/*.BINARY.txt; do corr=$(./datamash-1.3/datamash -W ppearson 1:2 < $FILE); printf "%s\t%s\n" "$(basename $FILE)" "$corr" >> a3top100norm.txt ; done
+ 1384  for FILE in *.BINARY.txt ; do corr=$(./datamash-1.3/datamash -W ppearson 1:2 < $FILE); printf "%s\t%s\n" "$(basename $FILE)" "$corr" >> a3top100norm.txt ; done
+ 1385  cd ~/a3/PRODUCTS
+ 1386  ls
+ 1387  for FILE in *.BINARY.txt ; do corr=$(./datamash-1.3/datamash -W ppearson 1:2 < $FILE); printf "%s\t%s\n" "$(basename $FILE)" "$corr" >> a3top100normproducts.txt ; done
+ 1388  ls
+ 1389  nano a3top100normproducts.txt
+ 1390  cd
+ 1391  cd a3
+ 1392  ls
+ 1393  ls FILE in CUSTOMERS
+ 1394  for FILE in CUSTOMERS/*.BINARY.txt; do corr=$(./datamash-1.3/datamash -W ppearson 1:2 < $FILE); printf "%s\t%s\n" "$(basename $FILE)" "$corr" >> tezt.txt ; doneM ;
+ 1395  for FILE in CUSTOMERS/*.BINARY.txt; do corr=$(./datamash-1.3/datamash -W ppearson 1:2 < $FILE); printf "%s\t%s\n" "$(basename $FILE)" "$corr" >> tezt.txt; done
+ 1396  vi  12670864.txt
+ 1397  script a3.txt
+ 1398  ls
+ 1399  cd
+ 1400  rm -r a3
+ 1401  ls
+ 1402  for FILE in ~/a3/CUSTOMERS ; do customerID=`echo $file | sed -e 's/\.txt//;/.TOTAL/d;/.BINARY/d;`; if [ ! -z "$customerID" ]; then grep $customerID amazon_reviews_us_Books_v1_02.tsv | cut -f 8-10 | awk -F '\t' '{if ($3 != 0) print $2, $1, $3, $2/$3; else print $2, $1, $3, $3 }' OFS='\t' > ~/a3/CUSTOMERS/$customerID.TOTAL.txt; echo "customerID: $customerID, count: $count"; ((count ++)); fi; done
+ 1403  ssh 12.42.205.101
+ 1404  cd a2
+ 1405  cd
+ 1406  mkdir a3
+ 1407  cp ~/a2/CUSOMTERs a3
+ 1408  cp ~/a2/CUSOMTERS a3
+ 1409  cd a3
+ 1410  ls
+ 1411  cd
+ 1412  cd a1
+ 1413  cd
+ 1414  cd a2
+ 1415  ls
+ 1416  cd
+ 1417  cp ~/a2/CUSTOMERS a3
+ 1418  cp -r ~/a2/CUSTOMERS a3
+ 1419  cd a3
+ 1420  ls
+ 1421  cd CUSTOMERS
+ 1422  ls
+ 1423  cd
+ 1424  cp -r ~/a2/PRODUCTS a3
+ 1425  cd ~/a3/PRODUCTS
+ 1426  ls
+ 1427  rm B000B5RXSG.txt
+ 1428  cd
+ 1429  ls
+ 1430  script a3.txt
+ 1431  rm a3.txt
+ 1432  cd ~/a3/CUSTOMERS
+ 1433  for FILE in *.txt; do median=$(awk '{if ($3>0){printf "%s\t%s\n",$1,$2/$3} else {printf "%s\t0\n",$1}}' < $FILE | sort -k 2 -n | awk '{a[i++]=$2;} END {print a[int(i/2)];}'); awk -v median=$median '{if ($3>0){ if ($2/$3 > median){printf "%s\t%s\n",$1,$2/$3} else {printf "%s\t0\n",$1}} else {printf "%s\t0\n",$1}}' < $FILE > /$(basename $FILE .txt).BINARY.txt; done
+ 1434  ls
+ 1435  for FILE in ~/a3/CUSTOMERS/*.txt; do median=$(awk '{if ($3>0){printf "%s\t%s\n",$1,$2/$3} else {printf "%s\t0\n",$1}}' < $FILE | sort -k 2 -n | awk '{a[i++]=$2;} END {print a[int(i/2)];}'); awk -v median=$median '{if ($3>0){ if ($2/$3 > median){printf "%s\t%s\n",$1,$2/$3} else {printf "%s\t0\n",$1}} else {printf "%s\t0\n",$1}}' < $FILE > ~/a3/CUSTOMERS/$(basename $FILE .txt).BINARY.txt; done
+ 1436  for FILE in ~/a3/PRODUCTS/*.txt;  do median=$(awk '{if ($3>0){printf "%s\t%s\n",$1,$2/$3} else {printf "%s\t0\n",$1}}' < $FILE | sort -k 2 -n | awk '{a[i++]=$2;} END {print a[int(i/2)];}'); awk -v median=$median '{if ($3>0){ if ($2/$3 > median){printf "%s\t%s\n",$1,$2/$3} else {printf "%s\t0\n",$1}} else {printf "%s\t0\n",$1}}' < $FILE > ~/a3/PRODUCTS/$(basename $FILE .txt).BINARY.txt; done
+ 1437  for FILE in ~/a3/CUSTOMERS/*.BINARY.txt; do corr=$(./datamash-1.3/datamash -W ppearson 1:2 < $FILE); printf "%s\t%s\n" "$(basename $FILE)" "$corr" >> top100customersnorm.txt ; done
+ 1438  cd ~/a3/CUSTOMERS
+ 1439  for FILE in *.BINARY.txt; do corr=$(./datamash-1.3/datamash -W ppearson 1:2 < $FILE); printf "%s\t%s\n" "$(basename $FILE)" "$corr" >> top100customersnorm.txt ; done
+ 1440  cd ~/a3/PRODUCTS
+ 1441  LS
+ 1442  ls
+ 1443  for FILE in *.BINARY.txt;  do corr=$(./datamash-1.3/datamash -W ppearson 1:2 < $FILE); printf "%s\t%s\n" "$(basename $FILE)" "$corr" >> top100prodnorm.txt; done
+ 1444  sort -k 2 -n -r top100prodnorm.txt | head -n 1
+ 1445  cd a3
+ 1446  ls
+ 1447  ls CUSTOMERS
+ 1448  cd
+ 1449  for FILE in CUSTOMERS-A3/*.txt; do median=$(awk '{if ($3>0){printf "%s\t%s\n",$1,$2/$3} else {printf "%s\t0\n",$1}}' < $FILE | sort -k 2 -n | awk '{a[i++]=$2;} END {print a[int(i/2)];}'); awk -v median=$median '{if ($3>0){ if ($2/$3 > median){printf "%s\t%s\n",$1,$2/$3} else {printf "%s\t0\n",$1}} else {printf "%s\t0\n",$1}}' < $FILE > CUSTOMERS-A3/$(basename $FILE .txt).BINARY.txt; done
+ 1450  script a3.txt
+ 1451  ls
+ 1452  rm a3.txt
+ 1453  rm -r a3
+ 1454  for file in `ls ~/a3/CUSTOMERS' ;  do customerID=`echo $file | sed -e 's/\.txt//;/.TOTAL/d;/.BINARY/d;`; if [ ! -z "$customerID" ]; then grep $customerID ~/amazon_reviews_us_Books_v1_02.tsv | cut -f 8-10 | awk -F '\t' '{if ($3 != 0) print $2, $1, $3, $2/$3; else print $2, $1, $3, $3 }' OFS='\t' > ~/a3/CUSTOMERS/$customerID.TOTAL.txt; echo "customerID: $customerID, count: $count"; ((count ++)); fi; done
+ 1455  cd a2
+ 1456  cd CUSTOMERS
+ 1457  ls 
+ 1458  vi 12080245.txt
+ 1459  vi vi 12080245.txt
+ 1460  vi 31821274.txt  
+ 1461  cd
+ 1462  for file in `ls ~/a2/CUSTOMERS' ; do customerID=`echo $file | sed -e 's/\.txt//;/.TOTAL/d;/.BINARY/d;`; if [ ! -z "$customerID" ]; then grep $customerID ~/amazon_reviews_us_Books_v1_02.tsv | cut -f 8-10 | awk -F '\t' '{if ($3 != 0) print $2, $1, $3, $2/$3; else print $2, $1, $3, $3 }' OFS='\t' > ~/a2/CUSTOMERS/$customerID.TOTAL.txt; echo "customerID: $customerID, count: $count"; ((count ++)); fi; done
+ 1463  for FILE in ~/a3/CUSTOMERS*.txt do median=$(awk '{if ($3>0){printf "%s\t%s\n",$1,$2/$3} else {printf "%s\t0\n",$1}}' < $FILE | sort -k 2 -n | awk '{a[i++]=$2;} END {print a[int(i/2)];}'); awk -v median=$median '{if ($3>0){ if ($2/$3 > median){printf "%s\t%s\n",$1,$2/$3} else {printf "%s\t0\n",$1}} else {printf "%s\t0\n",$1}}' < $FILE > ~/a3/CUSTOMERS/$(basename $FILE .txt).BINARY.txt; done
+ 1464  for FILE in ~/a3/CUSTOMERS/*.txt  do median=$(awk '{if ($3>0){printf "%s\t%s\n",$1,$2/$3} else {printf "%s\t0\n",$1}}' < $FILE | sort -k 2 -n | awk '{a[i++]=$2;} END {print a[int(i/2)];}'); awk -v median=$median '{if ($3>0){ if ($2/$3 > median){printf "%s\t%s\n",$1,$2/$3} else {printf "%s\t0\n",$1}} else {printf "%s\t0\n",$1}}' < $FILE > ~/a3/CUSTOMERS/$(basename $FILE .txt).BINARY.txt; done
+ 1465  cd ~/a3/CUSTOMERS
+ 1466  for FILE in ~/a2/CUSTOMERS/*.txt  do median=$(awk '{if ($3>0){printf "%s\t%s\n",$1,$2/$3} else {printf "%s\t0\n",$1}}' < $FILE | sort -k 2 -n | awk '{a[i++]=$2;} END {print a[int(i/2)];}'); awk -v median=$median '{if ($3>0){ if ($2/$3 > median){printf "%s\t%s\n",$1,$2/$3} else {printf "%s\t0\n",$1}} else {printf "%s\t0\n",$1}}' < $FILE > ~/a2/CUSTOMERS/$(basename $FILE .txt).BINARY.txt; done
+ 1467  cd a3
+ 1468  cd CUSTOMERS
+ 1469  for f in *.txt; do awk -v OFS='   ' '{$4 = ($3 != 0) ? sprintf("%.3f", $2 / $3) : "0"}1' $f | sort -n -k 4 > $f.sorted.txt ; done
+ 1470  for f in *.sorted.txt; do id=$(echo $f | cut -d '.' -f1); median=$(grep $f medians.txt | cut -d ' ' -f2) ; awk -v median=$median '{$2 = ($4 >=  median) ? "1" : "0"}1' $f >> $id.BINARY.txt ; done
+ 1471  ls
+ 1472  nano 12080245.BINARY.txt      16121903.txt.sorted.txt  34209528.txt             37369285.BINARY.txt      44731853.txt.sorted.txt  48139995.txt             50455329.BINARY.txt      51380442.txt.sorted.txt
+ 1473  vi 34407806.BINARY.txt 
+ 1474  cd
+ 1475  ls
+ 1476  cd a2
+ 1477  CUSTOMERS
+ 1478  cd CUSTOMERS
+ 1479  ls
+ 1480  cd
+ 1481  mkdir a3
+ 1482  cd a3
+ 1483  mkdir CUSTOMERS
+ 1484  mkdir PRODUCTS
+ 1485  cd
+ 1486  cd a3
+ 1487  cp ../a2/CUSTOMERS ../a3/CUSTOMERS
+ 1488  cp -r ../a2/CUSTOMERS ../a3/CUSTOMERS
+ 1489  cd CUSTOMERS
+ 1490  ls
+ 1491  ~ /a3
+ 1492  cd ~/a3
+ 1493  rm -r CUSTOMERS
+ 1494  ls
+ 1495  cp -r ~/a2/CUSTOMERS 
+ 1496  cp -r ~/a2/CUSTOMERS a3
+ 1497  ls
+ 1498  cd a3
+ 1499  ls
+ 1500  cd ~/a3
+ 1501  rm -r a3
+ 1502  ls
+ 1503  rm -r PRODUCTS
+ 1504  cd
+ 1505  cp -r ~/a2/CUSOMTERS ~/a3
+ 1506  ls
+ 1507  cp -r ~/a2/CUSTOMERS ~/a3/
+ 1508  cd a3
+ 1509  ls
+ 1510  cd CUSTOMERS
+ 1511  ls
+ 1512  cd
+ 1513  cp -r ~/a2/PRODUCTS ~/a3/
+ 1514  cd a4
+ 1515  cd a3
+ 1516  ls
+ 1517  cd PRODUCTS
+ 1518  ls
+ 1519  rm B000B5RXSG.txt
+ 1520  cd
+ 1521  script a3.txt
+ 1522  cd
+ 1523  ls
+ 1524  rm a3.txt
+ 1525  cd a3
+ 1526  rm -r CUSTOMERS
+ 1527  rm -r PRODUCTS
+ 1528  cd a2
+ 1529  cd ~/a2
+ 1530  l
+ 1531  ls
+ 1532  nano cust_n100
+ 1533  vi prod100.tx
+ 1534  vi prod100.txt
+ 1535  mkdir a3
+ 1536  ls
+ 1537  cd a3
+ 1538  ls
+ 1539  cd
+ 1540  mkdir ~/a3/CUSTOMERS
+ 1541  for file in ~/a2/CUSTOMERS/*.txt; do median=`sort -n -k 2 $file | awk ' { a[i++]=$2; } END { print a[int(i/2)]; }'` | awk -v median=$median 'BEGIN {OFS=FS} $2 < median {print $1,0} $2 >= median {print $1,1}' $file; ;
+ 1542  for file in ~/a2/CUSTOMERS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; median=`sort -nk2 $file | awk '{ a[i++]=$2; } END { print a[int(i/2)]; }'` | awk -v median=$median '$2 < median {print $1,0} $2 >= median {print $1,1}' $file > ~/a3/CUSTOMERS/$id.BINARY.txt; done
+ 1543  cd a3
+ 1544  cd CUSTOMERS
+ 1545  ls
+ 1546  head 23488951.BINARY.txt
+ 1547  cd datamash-1.3/
+ 1548  cd
+ 1549  cd datamash-1.3/
+ 1550  head 40824697.BINARY.txt
+ 1551  cd ~/a3/CUSTOMERS
+ 1552  head 45405508.BINARY.txt
+ 1553  head 51814959.BINARY.txt
+ 1554  head 12080245.BINARY.txt
+ 1555  head 53072811.BINARY.txt
+ 1556  head 49718706.BINARY.txt
+ 1557  head 46619300.BINARY.txt 
+ 1558  cd ~/a2/CUSTOMERS
+ 1559  ls
+ 1560  cd datamash-1.3
+ 1561  for file in ~/a3/CUSTOMERS/*.txt; do do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash  -W ppearson 1:2 < $file`; echo "$id $CORR" >> ~/a3/custcorrelation
+ 1562  for file in ~/a3/CUSTOMERS/*.txt; do id="$(basename "$file" | sed 's/\(.*\)\..*/\1/')"; CORR=`./datamash  -W ppearson 1:2 < $file`; echo "$id $CORR" >> ~/a3/custcorrelation; done
+ 1563  cd
+ 1564  cd a3
+ 1565  ls
+ 1566  head custcorrelation
+ 1567  ls
+ 1568  rm custcorrelation
+ 1569  ls
+ 1570  cd CUSTOMERS
+ 1571  ls
+ 1572  cd
+ 1573  cd a3
+ 1574  rm -r CUSTOMERS
+ 1575  cd
+ 1576  mv ~/a2/CUSTOMERS ~/a3/
+ 1577  cd a3
+ 1578  ls
+ 1579  CUSTOMERS
+ 1580  ls
+ 1581  cd CUSTOMERS
+ 1582  ls
+ 1583  cd
+ 1584  cd ~/a3/CUSTOMERS
+ 1585  for i in {1..200}; do filename=$(ls | head -n $i | tail -1) && filename2=$(echo $filename | cut -f 1 -d '.') && median=$(awk '{ sum+=$2; n++} END {print sum/n;}' $filename) &&  awk -v average="$median" '{if($2>average) print $1, "\t", 1; else print $1, "\t", 0}' $filename > $filename2.BINARY.txt;  done
+ 1586  ls
+ 1587  head 12080245.BINARY.txt
+ 1588  cd
+ 1589  cd a3
+ 1590  rm -r PRODUCTS
+ 1591  cd
+ 1592  mv ~/a2/PRODUCTS ~/a3/
+ 1593  cd a3
+ 1594  ls
+ 1595  cd PRODUCTS
+ 1596  for i in {1..200}; do filename=$(ls | head -n $i | tail -1) && filename2=$(echo $filename | cut -f 1 -d '.') && median=$(awk '{ sum+=$2; n++} END {print sum/n;}' $filename) &&  awk -v average="$median" '{if($2>average) print $1, "\t", 1; else print $1, "\t", 0}' $filename > $filename2.BINARY.txt;  done
+ 1597  ls
+ 1598  head 0060283262.BINARY.txt
+ 1599  ls
+ 1600  vi B000B5RXSG.txt
+ 1601  head B000B5RXSG.BINARY.txt
+ 1602  ls
+ 1603  cd ~/datamash-1.3/
+ 1604  cd datamash-1.3
+ 1605  or i in {1..100}; do filename=$(ls ~/a3/CUSTOMERS/ | grep BINARY | head -n $i | tail -1) && correlation=$(./datamash -W ppearson 1:2 < /home/pranav/a3/CUSTOMERS/$filename) && filename2=$(echo $filename | cut -f 1 -d '.') && echo -e $filename2 '\t' $correlation >> /home/pranav/a3/CUSTOMERS/100custcorr.txt; done
+ 1606  for i in {1..100}; do filename=$(ls ~/a3/CUSTOMERS/ | grep BINARY | head -n $i | tail -1) && correlation=$(./datamash -W ppearson 1:2 < /home/pranav/a3/CUSTOMERS/$filename) && filename2=$(echo $filename | cut -f 1 -d '.') && echo -e $filename2 '\t' $correlation >> /home/pranav/a3/CUSTOMERS/100custcorr.txt; done
+ 1607  cd ~/a3/CUSTOMERS
+ 1608  ls
+ 1609  head 100custcorr.txt
+ 1610  tail 100custcorr.txt  
+ 1611  less 100custcorr.txt  
+ 1612  nano 100custcorr.txt  
+ 1613  ls
+ 1614  cd datamash-1.3
+ 1615  for i in {1..100}; do filename=$(ls ~/a3/PRODUCTS/ | grep BINARY | head -n $i | tail -1) && correlation=$(./datamash -W ppearson 1:2 < /home/pranav/a3/PRODUCTS/$filename) && filename2=$(echo $filename | cut -f 1 -d '.') && echo -e $filename2 '\t' $correlation >> /home/pranav/a3/PRODUCTS/100prodcorr.txt; done
+ 1616  cd ~/a3/PRODUCTS
+ 1617  ls
+ 1618  less 100prodcorr.txt 
+ 1619  cd ~/a3/CUSTOMERS
+ 1620  ls
+ 1621  sort -k 2 -r 100custcorr.txt > sortedcust_corr.txt
+ 1622  head sortedcust_corr.txt
+ 1623  nano sortedcust_corr.txt
+ 1624  vi sortedcust_corr.txt
+ 1625  grep -Ev 'nan' sortedcust_corr.txt > newone.txt
+ 1626  nano newone.txt
+ 1627  cd ~/a3/PRODUCTS
+ 1628  ls
+ 1629  grep -Ev 'nan' 100prodcorr.txt > newtwo.txt
+ 1630  sort -k 2 -r newtwo.txt > sortednewone.txt
+ 1631  head sortednewone.txt
+ 1632  cd
+ 1633  ls
+ 1634  cd ~/a3/PRODUCTS
+ 1635  grep 0595356524 ~/amazon_reviews_us_Books_v1_02.tsv | cut -f 9,14 > 0595356524.rvw.txt
+ 1636  nano 0595356524.rvw.txt
+ 1637  sed -i 's/<[^/]*\/>//g' 0595356524.rvw.txt
+ 1638  sed -i 's/\b[a-zA-Z]\{1,2\}\b//g' 0595356524.rvw.txt
+ 1639  sed -i -e 's/[\.,;]//g' -e 's/\band\b//g' -e 's/\bor\b//g' -e 's/\bif\b//g' -e 's/\bin\b//g' -e 's/\bit\b//g' 0595356524.rvw.txt
+ 1640  nano 0595356524.rvw.txt
+ 1641  awk -F '\t' '{if($1==1) print $2}' OFS=' ' 0595356524.rvw.txt | tr -s ' ' | tr '[:space:]' '[\n*]' | sort | uniq -c | sort -k1 -r | head -n 15
+ 1642  awk -F '\t' '{if($1==0) print $2}' OFS=' ' 0595356524.rvw.txt | tr -s ' ' | tr '[:space:]' '[\n*]' | sort | uniq -c | sort -k1 -r | head -n 15
+ 1643  cd
+ 1644  cd a3
+ 1645  rm -r CUSTOMERS
+ 1646  rm -r PRODUCTS
+ 1647  mv ~/a2/CUSTOMERS ~/a3/
+ 1648  cd
+ 1649  mv ~/a2/CUSTOMERS ~/a3/
+ 1650  ls
+ 1651  cd a2
+ 1652  ls
+ 1653  cd
+ 1654  ls
+ 1655  cut -f 2 amazon_reviews_us_Books_v1_02.tsv | sort  
+ 1656  cut -f 2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq | wc -l
+ 1657  cut -f 2 amazon_reviews_us_Books_v1_02.tsv | sort  
+ 1658  cut -f 2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -rn > topReviewID.txt
+ 1659  cd a2
+ 1660  ls
+ 1661  nano cust_n100.txt
+ 1662  nano cust100.txt
+ 1663  for i in {1..100}; do numID=$(head -n $i cust100.txt | tail -1) && grep $numID amazon_reviews_us_Books_v1_02.tsv | cut -f 8,9 > CUSTOMERS/$numID.txt; done 
+ 1664  cd
+ 1665  ls
+ 1666  cp amazon_reviews_us_Books_v1_02.tsv
+ 1667  cp amazon_reviews_us_Books_v1_02.tsv a2
+ 1668  cd a2
+ 1669  ls
+ 1670  for i in {1..100}; do numID=$(head -n $i cust100.txt | tail -1) && grep $numID amazon_reviews_us_Books_v1_02.tsv | cut -f 8,9 > CUSTOMERS/$numID.txt; done
+ 1671  mkdir CUSTOMERS
+ 1672  for i in {1..100}; do numID=$(head -n $i cust100.txt | tail -1) && grep $numID amazon_reviews_us_Books_v1_02.tsv | cut -f 8,9 > CUSTOMERS/$numID.txt; done
+ 1673  pranav@f6linux3:~/a2$ for i in {1..100}; do numID=$(head -n $i cust100.txt | tail -1) && grep $numID amazon_reviews_us_Books_v1_02.tsv | cut -f 8,9 > CUSTOMERS/$numID.txt; done
+ 1674  for i in {1..100}; do numID=$(head -n $i cust100.txt | tail -1) && grep $numID amazon_reviews_us_Books_v1_02.tsv | cut -f 8,9 > CUSTOMERS/$numID.txt; done
+ 1675  cut -d '        ' -f 2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -k 1 | awk -F" " '$1 != 1 {print $2}' | tail -n 100 > customers.txt &
+ 1676  cd as
+ 1677  =cd a2
+ 1678  ls
+ 1679  cd a2
+ 1680  ls
+ 1681  cd customers
+ 1682  cd CUSTOMERS
+ 1683  ls
+ 1684  cd
+ 1685  cd a2
+ 1686  rm CUSTOMERS
+ 1687  rm -r CUSTOMERS
+ 1688  cd a2
+ 1689  ls
+ 1690  head cust100.txt
+ 1691  for i in {1..100}; do numID=$(head -n $i cust100.txt | tail -1) && grep $numID amazon_reviews_us_Books_v1_02.tsv | cut -f 8,9 > CUSTOMERS/$numID.txt; done 
+ 1692  ls
+ 1693  mkdir CUSTOMERS
+ 1694  ls
+ 1695  cd CUSTOMERS
+ 1696  ls
+ 1697  rm 50122160.txt
+ 1698  cd ~/a2
+ 1699  for i in {1..100}; do numID=$(head -n $i cust100.txt | tail -1) && grep $numID amazon_reviews_us_Books_v1_02.tsv | cut -f 8,9 > CUSTOMERS/$numID.txt; done
+ 1700  cd CUSTOMERS
+ 1701  ls
+ 1702  cd
+ 1703  cd a2
+ 1704  rm -r CUSTOMERS
+ 1705  ls
+ 1706  cd a2
+ 1707  ls
+ 1708  mkdir CUSTOMERS
+ 1709  for i in {1..100}; do numID=$(head -n $i cust100.txt | tail -1) && grep $numID amazon_reviews_us_Books_v1_02.tsv | cut -f 8,9 > CUSTOMERS/$numID.txt; done 
+ 1710  head prod100.txt
+ 1711  cd CUSTOMERS
+ 1712  ls
+ 1713  nano 23488951.txt 
+ 1714  cd
+ 1715  cd a2
+ 1716  mkdir PRODUCTS
+ 1717  cd PRODUCTS
+ 1718  CD
+ 1719  cd
+ 1720  cd a2
+ 1721  for i in {1..100}; do numID=$(head -n $i prod100.txt | tail -1) && grep $numID amazon_reviews_us_Books_v1_02.tsv | cut -f 8,9 > PRODUCTS/$numID.txt; done 
+ 1722  cd
+ 1723  sudo apt install datamas
+ 1724  sudo apt install datamash
+ 1725  apt install datamash
+ 1726  sudo apt install datamash
+ 1727  cd a2
+ 1728  sudo apt install datamash
+ 1729  cd
+ 1730  wget http://ftp.gnu.org/gnu/datamash/datamash-1.3.tar.gz
+ 1731  tar -xzf datamash-1.3.tar.gz
+ 1732  cd datamash-1.3cd datamash-1.3
+ 1733  cd datamash-1.3
+ 1734  ./configure
+ 1735  make
+ 1736  make check
+ 1737  sudo make install
+ 1738  cd
+ 1739  cd a3
+ 1740  cd
+ 1741  cp ~/a2/CUSTOMERS ~/a3/
+ 1742  cp -r ~/a2/CUSTOMERS ~/a3/
+ 1743  cp -r ~/a2/PRODUCTS ~/a3/
+ 1744  script a3.txt
+ 1745  rm a3.txt
+ 1746  cp datamash-1.3 ~/a3/CUSTOMERS
+ 1747  cp -r datamash-1.3 ~/a3/CUSTOMERS
+ 1748  cp -r datamash-1.3 ~/a3/PRODUCTS
+ 1749  cd ~/a3/CUSTOMERS
+ 1750  cd a3
+ 1751  cd ~/a3/
+ 1752  script a3.txt
+ 1753  cd CUSTOMERS
+ 1754  for i in {1..200}; do filename=$(ls | head -n $i | tail -1) && filename2=$(echo $filename | cut -f 1 -d '.') && median=$(awk '{ sum+=$2; n++} END {print sum/n;}' $filename) &&  awk -v average="$median" '{if($2>average) print $1, "\t", 1; else print $1, "\t", 0}' $filename > $filename2.BINARY.txt;  done
+ 1755  ls
+ 1756  cd ~/a3/PRODUCTS
+ 1757  for i in {1..200}; do filename=$(ls | head -n $i | tail -1) && filename2=$(echo $filename | cut -f 1 -d '.') && median=$(awk '{ sum+=$2; n++} END {print sum/n;}' $filename) &&  awk -v average="$median" '{if($2>average) print $1, "\t", 1; else print $1, "\t", 0}' $filename > $filename2.BINARY.txt;  done
+ 1758  ls
+ 1759  cd datamash-1.3
+ 1760  for i in {1..100}; do filename=$(ls ~/a3/PRODUCTS/ | grep BINARY | head -n $i | tail -1) && correlation=$(./datamash -W ppearson 1:2 < /home/pranav/a3/PRODUCTS/$filename)&& filename2=$(echo $filename | cut -f 1 -d '.') && echo -e $filename2 '\t' $correlation >> /home/pranav/a3/PRODUCTS/prodcustcorr.txt; done
+ 1761  cd ~/a3/PRODUCTS
+ 1762  head 0060283262.BINARY.txt
+ 1763  cd ~/a3/CUSTOMERS
+ 1764  for i in {1..100}; do filename=$(ls ~/a3/CUSTOMERS/ | grep BINARY | head -n $i | tail -1) && correlation=$(./datamash -W ppearson 1:2 < /home/pranav/a3/CUSTOMERS/ $filename)&& filename2=$(echo $filename | cut -f 1 -d '.') && echo -e $filename2 '\t' $correlation >> /home/pranav/a3/CUSTOMERS/custcorr.txt; done
+ 1765  ls
+ 1766  head 51380442.BINARY.txt 
+ 1767  head 1697838.BINARY.txt
+ 1768  head 51638342.BINARY.txt
+ 1769  cd datamash-1.3
+ 1770  for i in {1..100}; do filename=$(ls ~/a3/CUSTOMERS/ | grep BINARY | head -n $i | tail -1) && correlation=$(./datamash -W ppearson 1:2 < /home/pranav/a3/CUSTOMERS/ $filename)&& filename2=$(echo $filename | cut -f 1 -d '.') && echo -e $filename2 '\t' $correlation >> /home/pranav/a3/CUSTOMERS/custcorr.txt; done
+ 1771  or i in {1..100}; do filename=$(ls ~/a2/CUSTOMERS/ | grep BINARY | head -n $i | tail -1) && correlation=$(./datamash -W ppearson 1:2 < /home/pranav/a3/CUSTOMERS/  $filename)&& filename2=$(echo $filename | cut -f 1 -d '.') && echo -e $filename2 '\t' $correlation >>/home/pranav/a3/CUSTOMERS/custcorr.txt; done
+ 1772  for i in {1..100}; do filename=$(ls ~/a2/CUSTOMERS/ | grep BINARY | head -n $i | tail -1) && correlation=$(./datamash -W ppearson 1:2 < /home/pranav/a3/CUSTOMERS/  $filename)&& filename2=$(echo $filename | cut -f 1 -d '.') && echo -e $filename2 '\t' $correlation >>/home/pranav/a3/CUSTOMERS/custcorr.txt; done
+ 1773  for i in {1..100}; do filename=$(ls ~/a2/CUSTOMERS/ | grep BINARY | head -n $i | tail -1) && correlation=$(./datamash -W ppearson 1:2 < /home/pranav/a3/CUSTOMERS/ $filename)&& filename2=$(echo $filename | cut -f 1 -d '.') && echo -e $filename2 '\t' $correlation >> /home/pranav/a3/CUSTOMERS/custcorr.txt; done
+ 1774  cd
+ 1775  ~/a3/PRODUCTS
+ 1776  cd ~/a3/PRODUCTS
+ 1777  ls
+ 1778  head prodcustcorr.txt
+ 1779  cd ~/a3/CUSTOMERS
+ 1780  ls
+ 1781  for i in {1..100}; do filename=$(ls ~/a2/CUSTOMERS/ | grep BINARY | head -n $i | tail -1) && correlation=$(./datamash -W ppearson 1:2 < /home/pranav/a3/CUSTOMERS/$filename)$filename) && filename2=$(echo $filename | cut -f 1 -d '.') && echo -e $filename2 '\t' $correlation >> /home/pranav/a3/CUSTOMERS/custcorr.txt; done
+ 1782  for i in {1..100}; do filename=$(ls ~/a3/CUSTOMERS/ | grep BINARY | head -n $i | tail -1) && correlation=$(./datamash -W ppearson 1:2 < /home/pranav/a3/CUSTOMERS/$filename) && filename2=$(echo $filename | cut -f 1 -d '.') && echo -e $filename2 '\t' $correlation >> /home/pranav/a3/CUSTOMERS/custcorr.txt; done
+ 1783  ls
+ 1784  cd datamash-1.3
+ 1785  for i in {1..100}; do filename=$(ls ~/a3/CUSTOMERS/ | grep BINARY | head -n $i | tail -1) && correlation=$(./datamash -W ppearson 1:2 < /home/pranav/a3/CUSTOMERS/$filename) && filename2=$(echo $filename | cut -f 1 -d '.') && echo -e $filename2 '\t' $correlation >> /home/pranav/a3/CUSTOMERS/custcorr.txt; done
+ 1786  cd ~/a3/CUSTOMERS
+ 1787  ls
+ 1788  head custcorr.txt
+ 1789  sort -k 2 -r custcorr.txt > sortedcustcorr.txt
+ 1790  head sortedcustcorr.txt
+ 1791  grep -Ev 'nan'sortedcustcorr.txt > topcustcorr.txt
+ 1792  grep -Ev 'nan' sortedcustcorr.txt > topcustcorr.txt
+ 1793  head topcustcorr.txt
+ 1794  ls
+ 1795  head 49459388.BINARY.txt
+ 1796  nano 49459388.BINARY.txt
+ 1797  nano 12081595  0.87287156094397
+ 1798  nano 12081595.BINARY.txt
+ 1799  nano 53072811.BINARY.txt
+ 1800  cd ~/a3/PRODUCTS
+ 1801  ls
+ 1802  sort -k 2 -r prodcustcorr.txt > sortedprodcorr.txt
+ 1803  grep -Ev 'nan' sortedprodcorr.txt > topprodcorr.txt
+ 1804  head topprodcorr.txt
+ 1805  nano 0595356524.BINARY.txt
+ 1806  nano 1933060050.BINARY.txt
+ 1807  ~/a3/
+ 1808  ~/a3
+ 1809  cd ~/a3
+ 1810  grep 1933060050 ~/amazon_reviews_us_Books_v1_02.tsv | cut -f 9,14 > 1933060050.review.txt
+ 1811  sed -i 's/<[^/]*\/>//g' 1933060050.review.txt
+ 1812  sed -i 's/\b[a-zA-Z]\{1,2\}\b//g' 1933060050.review.txt
+ 1813  sed -i -e 's/[\.,;]//g' -e 's/\band\b//g' -e 's/\bor\b//g' -e 's/\bif\b//g' -e 's/\bin\b//g' -e 's/\bit\b//g' 1933060050.review.txt
+ 1814  awk -F '\t' '{if($1==1) print $2}' OFS=' ' 1933060050.review.txt | tr -s ' ' | tr '[:space:]' '[\n*]' | sort | uniq -c | sort -k1 -r | head -n 15
+ 1815  awk -F '\t' '{if($1==0) print $2}' OFS=' ' 1933060050.review.txt | tr -s ' ' | tr '[:space:]' '[\n*]' | sort | uniq -c | sort -k1 -r | head -n 15
+ 1816  ls
+ 1817  vi a3.txt
+ 1818  vim a3.txt
+ 1819  nano a3.txt
+ 1820  vim a3.txt
+ 1821  nano a3.txt
+ 1822  cd a
+ 1823  cd a3
+ 1824  ls
+ 1825  git status
+ 1826  git add a3.txt
+ 1827  git status
+ 1828  git remote add origin https://github.com/pranav-chill/a3.git
+ 1829  git status
+ 1830  git add a3.txt
+ 1831  git status
+ 1832  git remote remove origin
+ 1833  git remote add origin https://github.com/pranav-chill/a3.git
+ 1834  git push -u origin master
+ 1835  git pull origin master
+ 1836  script ws8.txt
+ 1837  cd ws8
+ 1838  ls
+ 1839  nano unverified3.txt
+ 1840  cd ws8
+ 1841  ls
+ 1842  nano verified3.txt
+ 1843  script ws8.txt
+ 1844  rm unverified3.txt
+ 1845  head unverified2.txt
+ 1846  sed 's/[.,;!?]/ /g; s/ and / /g; s/ or / /g; s/ if / /g; s/ in / /g; s/ it / /g; s/<[^>]\+>/ /g; s/[ ][a-zA-Z0-9]\{1,2\}[ ]/ /g' unverified2.txt > unverified3.txt
+ 1847  cd ws8
+ 1848  ls
+ 1849  rm unverified3.txt
+ 1850  script ws8.txt
+ 1851  grep -v '^$' verified3.txt | sort | uniq -c | sort -rn | awk '{print $2" "$1}' > verified_wc.txt
+ 1852  head -10 verified_wc.txt
+ 1853  grep -v '^$' unverified3.txt | sort | uniq -c | sort -rn | awk '{print $2" "$1}' > unverified_wc.txt
+ 1854  ls
+ 1855  head - 10 unverified_wc.txt
+ 1856  head -10 unverified_wc.txt
+ 1857  head -10 verified_wc.txt
+ 1858  head -10 unverified_wc.txt
+ 1859  nano ws8.txt
+ 1860  cd
+ 1861  rm -r ws8
+ 1862  ls
+ 1863  mkdir ws8
+ 1864  cd ws8
+ 1865  ls
+ 1866  script ws8.txt
+ 1867  awk -F'\t' '$12=="Y"' ~/amazon_reviews_us_Books_v1_02.tsv > verified.txt
+ 1868  awk -F'\t' '$12=="N"' ~/amazon_reviews_us_Books_v1_02.tsv > unverified.txt
+ 1869  head -n100 verified.txt | awk -F'\t' '{print$14}' >> verified.txt
+ 1870  head -n100 unverified.txt | awk -F'\t' '{print$14}' >> unverified.txt
+ 1871  tr " " "\n" < verified.txt >> verified2.txt
+ 1872  sed 's/[.,;!?]/ /g; s/ and / /g; s/ or / /g; s/ if / /g; s/ in / /g; s/ it / /g; s/<[^>]\+>/ /g; s/[ ][a-zA-Z0-9]\{1,2\}[ ]/ /g' verified2.txt > verified3.txt
+ 1873  sed 's/[.,;!?]/ /g; s/ and / /g; s/ or / /g; s/ if / /g; s/ in / /g; s/ it / /g; s/<[^>]\+>/ /g; s/[ ][a-zA-Z0-9]\{1,2\}[ ]/ /g' unverified2.txt > unverified3.txt
+ 1874  tr " " "\n" < unverified.txt >> unverified2.txt
+ 1875  sed 's/[.,;!?]/ /g; s/ and / /g; s/ or / /g; s/ if / /g; s/ in / /g; s/ it / /g; s/<[^>]\+>/ /g; s/[ ][a-zA-Z0-9]\{1,2\}[ ]/ /g' unverified2.txt > unverified3.txt
+ 1876  ls
+ 1877  cd ws8
+ 1878  ls
+ 1879  nano ws8.txt
+ 1880  cd
+ 1881  rm -r ws8
+ 1882  ls
+ 1883  mkdir ws8
+ 1884  cd ws8
+ 1885  ls
+ 1886  script ws8
+ 1887  awk -F'\t' '$12=="Y"' ~/amazon_reviews_us_Books_v1_02.tsv > verified.txt
+ 1888  awk -F'\t' '$12=="N"' ~/amazon_reviews_us_Books_v1_02.tsv > verified.txt
+ 1889  cd ws8
+ 1890  ls
+ 1891  rm verified.txt
+ 1892  rm ws8
+ 1893  script ws8.txt
+ 1894  awk -F'\t' '$12=="Y"' ~/amazon_reviews_us_Books_v1_02.tsv > verified.txt
+ 1895  awk -F'\t' '$12=="N"' ~/amazon_reviews_us_Books_v1_02.tsv > unverified.txt
+ 1896  head -n100 verified.txt | awk -F'\t' '{print$14}' >> verified.txt
+ 1897  head -n100 unverified.txt | awk -F'\t' '{print$14}' >> unverified.txt
+ 1898  tr " " "\n" < verified.txt >> verified2.txt
+ 1899  head verified2.txt
+ 1900  tr '\n' ' ' < verified2.txt >> verified3.txt
+ 1901  head verified3.txt
+ 1902  cd ws8
+ 1903  ls
+ 1904  rm unverified.txt
+ 1905  rm verified.txt
+ 1906  rm verified2.txt
+ 1907  rm verified3.txt
+ 1908  rm ws8.txt
+ 1909  awk -F'\t' '$12=="Y"' ~/amazon_reviews_us_Books_v1_02.tsv> verified.txt
+ 1910  awk -F'\t' '$12=="N"' ~/amazon_reviews_us_Books_v1_02.tsv> unverified.txt
+ 1911  head -n100 verified.txt | awk -F'\t' '{print$14}' >> verified.txt
+ 1912  head -n100 unverified.txt | awk -F'\t' '{print$14}' >> unverified.txt
+ 1913  tr '\n' ' ' < verified.txt >> verified2.txt
+ 1914  sed 's/[.,;!?]/ /g; s/ and / /g; s/ or / /g; s/ if / /g; s/ in / /g; s/ it / /g; s/<[^>]\+>/ /g; s/[ ][a-zA-Z0-9]\{1,2\}[ ]/ /g' verified2.txt > verified3.txt
+ 1915  tr ' ' '\n' < verified3.txt >> verified4.txt
+ 1916  head verified4.txt
+ 1917  nano verified4.txt
+ 1918  grep -v '^$' verified4.txt | sort | uniq -c | sort -rn | awk '{print $2" "$1}' > verified_wc.txt
+ 1919  tr '\n' ' ' < unverified.txt >> unverified2.txt
+ 1920  sed 's/[.,;!?]/ /g; s/ and / /g; s/ or / /g; s/ if / /g; s/ in / /g; s/ it / /g; s/<[^>]\+>/ /g; s/[ ][a-zA-Z0-9]\{1,2\}[ ]/ /g' unverified2.txt > unverified3.txt
+ 1921  ls
+ 1922  rm unverified3.txt
+ 1923  head unverified3.txt
+ 1924  ls
+ 1925  rm verified3.txt
+ 1926  ed 's/[.,;!?]/ /g; s/ and / /g; s/ or / /g; s/ if / /g; s/ in / /g; s/ it / /g; s/<[^>]\+>/ /g; s/[ ][a-zA-Z0-9]\{1,2\}[ ]/ /g' unverified2.txt > unverified3.txt
+ 1927  ls
+ 1928  rm unverified3.txt
+ 1929  sed 's/[.,;!?]/ /g; s/ and / /g; s/ or / /g; s/ if / /g; s/ in / /g; s/ it / /g; s/<[^>]\+>/ /g; s/[ ][a-zA-Z0-9]\{1,2\}[ ]/ /g' unverified2.txt > unverified3.txt
+ 1930  ls
+ 1931  head unverified3.txt
+ 1932  sed 's/[.,;!?]/ /g; s/ and / /g; s/ or / /g; s/ if / /g; s/ in / /g; s/ it / /g; s/<[^>]\+>/ /g; s/[ ][a-zA-Z0-9]\{1,2\}[ ]/ /g' unverified2.txt > unverified3.txt
+ 1933  rm unverified3.txt
+ 1934  sed 's/[.,;!?]/ /g; s/ and / /g; s/ or / /g; s/ if / /g; s/ in / /g; s/ it / /g; s/<[^>]\+>/ /g; s/[ ][a-zA-Z0-9]\{1,2\}[ ]/ /g' unverified2.txt > unverified3.txt
+ 1935  head verified_wc.txt
+ 1936  sed -i 's/\b[A-Za-z]\{1,2\}\b//g' univerified2.txt
+ 1937  sed -i 's/\b[A-Za-z]\{1,2\}\b//g' unverified2.txt
+ 1938  cd
+ 1939  cd ws8
+ 1940  sed -i 's/\b[A-Za-z]\{1,2\}\b//g' unverified2.txt
+ 1941  ls
+ 1942  cd
+ 1943  cd ws8
+ 1944  ls
+ 1945  cd
+ 1946  rm -r ws8
+ 1947  awk -F'\t' '$12=="Y"' ~/amazon_reviews_us_Books_v1_02.tsv> verified.txt
+ 1948  awk -F'\t' '$12=="N"' ~/amazon_reviews_us_Books_v1_02.tsv> unverified.txt
+ 1949  script ws8.txt
+ 1950  head -n100 verified.txt | awk -F'\t' '{print$14}' >> verified.txt
+ 1951  head -n100 unverified.txt | awk -F'\t' '{print$14}' >> unverified.txt
+ 1952  ls
+ 1953  sed 's/ /\n/g' verified.txt > verified2.txt
+ 1954  sed -i 's/[.,]//g' verified2.txt > verified3.txt
+ 1955  sed -i '/^[[:space:]]*$/d' verified3.txt > verified4.txt
+ 1956  head verified4.txt
+ 1957  nano verified4.txt
+ 1958  head verified3.txt
+ 1959  head verified2.txt
+ 1960  ls
+ 1961  rm verified2.txt
+ 1962  sed 's/[.,;!?]/ /g; s/ and / /g; s/ or / /g; s/ if / /g; s/ in / /g; s/ it / /g; s/<[^>]\+>/ /g; s/[ ][a-zA-Z0-9]\{1,2\}[ ]/ /g' verified.txt > verified2.txt
+ 1963  head verified2.txt
+ 1964  tr ' ' '\n' < verified2.txt >> verified3.txt
+ 1965  head verified3.txt
+ 1966  sort verified3.txt | sort | uniq -c | sort -rn | awk '{print $2" "$1}' > verified_wc.txt
+ 1967  ls
+ 1968  sed 's/[.,;!?]/ /g; s/ and / /g; s/ or / /g; s/ if / /g; s/ in / /g; s/ it / /g; s/<[^>]\+>/ /g; s/[ ][a-zA-Z0-9]\{1,2\}[ ]/ /g' unverified.txt > unverified2.txt
+ 1969  head unverified2.txt
+ 1970  tr ' ' '\n' < unverified2.txt >> unverified3.txt
+ 1971  sort unverified3.txt | sort | uniq -c | sort -rn | awk '{print $2" "$1}' > unverified_wc.txt
+ 1972  head unverified_wc.txt
+ 1973  head verified_wc.txt
+ 1974  sort unverified3.txt | uniq -c | sort -rn > unverified_wc.txt
+ 1975  cd ws8
+ 1976  ls
+ 1977  nano ws8.txt
+ 1978  history
+ 1979  cd ws8
+ 1980  history > cmds.log
+ 1981  ls
+ 1982  git init
+ 1983  git status
+ 1984  git add cdms.log
+ 1985  git add cmds.log
+ 1986  git add ws8.txt
+ 1987  git status
+ 1988  git commit -m "ws8"
+ 1989  git remote add origin https://github.com/pranav-chill/ws8.git
+ 1990  git push -u origin master
+ 1991  git pull origin master
+ 1992  cd
+ 1993  git clone https://github.com/pranav-chill/ws8.git
+ 1994  nano randomsample.sh
+ 1995  ls
+ 1996  ./randomsample.sh 100 amazon_reviews_us_Books_v1_02.tsv 
+ 1997  ls
+ 1998  rm randomsample.sh
+ 1999  nano randomsample.sh
+ 2000  ls
+ 2001  db=./amazon_reviews_us_Books_v1_02.tsv;
+ 2002  chmod 777 randomsample.sh
+ 2003  ./randomsample.sh "1" "$db"
+ 2004  ls
+ 2005  history > cmds.log
